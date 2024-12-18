@@ -1,0 +1,124 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Container */
+div {
+    max-width: 800px;
+    max-height: 5000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #37c4a1;
+    border-radius: 10px;
+    box-shadow:darkorange;
+    overflow:hidden;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #4c19e8;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Name and Title */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h4 {
+    text-align: center;
+    color: #0f0e0e;
+}
+
+
+p{
+    font-size: x-large;
+}
+
+.action__btns {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .action__btns button {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .home{
+    color: var(--primary-color);
+  }
+  
+  .home:hover {
+    background-color: var(--primary-color-dark);
+    color: #ffffff;
+  }
+  
+  .resume {
+    color: var(--primary-color);
+  }
+  
+  .resume:hover {
+    background-color: var(--primary-color-dark);
+    color: #ffffff;
+  }
+  @media (width < 750px) {
+    nav .checkbox {
+      display: block;
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 85px);
+      left: -100%;
+      top: 85px;
+      background-color: var(--extra-light);
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
+  
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    ul li a {
+      font-size: 1.25rem;
+    }
+  
+    .section__container {
+      padding: 10rem 1rem 5rem 1rem;
+      text-align: center;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .action__btns {
+      margin: auto;
+    }
+  }

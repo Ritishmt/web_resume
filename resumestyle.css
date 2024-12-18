@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    box-shadow: #e20c0c;
+  }
+  
+  .resume-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center; 
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .header p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #8b0e21;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #03327e;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job h3 {
+    font-size: 1.4em;
+    color: #333;
+  }
+  
+  .job ul {
+    margin-top: 10px;
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skills li {
+    background-color: #e7f4e7;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .header h1 {
+      font-size: 2em;
+    }
+  
+    .header p {
+      font-size: 1em;
+    }
+  
+    .resume-container {
+      padding: 10px;
+    }
+  }
+  .action__btns {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .action__btns button {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .home{
+    color: var(--primary-color);
+  }
+  
+  .home:hover {
+    background-color: var(--primary-color-dark);
+    color: #3fe116;
+  }
+  
+  .bio-data {
+    color: var(--primary-color);
+  }
+  
+  .bio-data:hover {
+    background-color: var(--primary-color-dark);
+    color: #34e90c;
+  }
+  @media (width < 750px) {
+    nav .checkbox {
+      display: block;
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 85px);
+      left: -100%;
+      top: 85px;
+      background-color: var(--extra-light);
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
+  
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    ul li a {
+      font-size: 1.25rem;
+    }
+  
+    .section__container {
+      padding: 10rem 1rem 5rem 1rem;
+      text-align: center;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .action__btns {
+      margin: auto;
+    }
+  }  
